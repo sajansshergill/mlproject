@@ -1,4 +1,9 @@
+import os
 import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..', 'src')))
+#Explanation:
+#sys.path.append(...): This appends the src directory (relative to the script location) to the sys.path, which is where Python looks for modules to import.
+#os.path.abspath(os.path.join(...)): This generates the absolute path to the src directory.
 from logger import logging
 
 def error_message_details(error, error_detail:sys): #error_detail will be there in sys
